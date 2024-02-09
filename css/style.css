@@ -1,0 +1,78 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+h2 {
+    text-align: center;
+    font-size: 3em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+    font-size: 1.2em;
+}
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #e94d58;
+}
+button:nth-child(2) {
+    margin-right: -200px;
+    background: white;
+    color: #e94d58;
+}
+
+button.no-btn {
+    position: fixed; /* Updated from 'absolute' to 'fixed' */
+    /* ... other styles ... */
+}
+
+.surprise-btn {
+    background-color: #e94d58; /* Set the button color to red */
+    color: white;
+    padding: 10px 20px; /* Adjust padding to ensure the text fits */
+    white-space: normal; /* Allow the text to wrap if it's too long for one line */
+    text-align: center; /* Center the text within the button */
+    border-radius: 30px;
+    border: 2px solid #e94d58;
+    width: auto; /* Adjust this as needed to fit the text */
+    min-width: 150px; /* Set a minimum width to handle short text */
+    max-width: 100%; /* Ensure it doesn't overflow its container */
+    font-size: 1em; /* Adjust the font size as needed */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+    box-shadow: 0 2px 4px gray; /* Optional: Add shadow for consistency */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Adjust the font size if necessary to fit longer text */
+@media (max-width: 400px) {
+    .surprise-btn {
+        font-size: 0.8em; /* Smaller font size for smaller screens */
+    }
+}
+
